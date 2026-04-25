@@ -1,0 +1,30 @@
+[
+  {
+    "username": "admin",
+    "password_hash": "HWErLJnfpI5Z+hvo+r++fA==$xxcIkcHNtab320xHjkqChashgOxKDJA+mf+KPXUOnMk=",
+    "full_name": "Administrator",
+    "role": "admin",
+    "is_active": true
+  },
+  {
+    "username": "jamshidbek",
+    "full_name": "Jamshidbek Shodmonbekov",
+    "password_hash": "oddwvk1j/xd/0w29P+QGwA==$SR6ArIJBSwNyngF/Eeqb0CPlddYb7bLvZ8Rr2TMFMsM=",
+    "role": "admin",
+    "is_active": true
+  },
+  {
+    "username": "boshliq",
+    "full_name": "Mamasoliev Sobir",
+    "password_hash": "PPowSHjDE4jJ+34e4SEAdA==$ZpkEBSkT7qJnQXycp20PURY6nptreCIMqY1/XOS241k=",
+    "role": "viewer",
+    "is_active": true
+  },
+  {
+    "username": "xasan",
+    "full_name": "Xasan Karimov",
+    "password_hash": "gvwWofldmajR+NwQu1Oatg==$Y/gagv/YLmebuGwPtLoT1Fsz2utEFoC3kTJFo0p10lk=",
+    "role": "viewer",
+    "is_active": true
+  }
+]

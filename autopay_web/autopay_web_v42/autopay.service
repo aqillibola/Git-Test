@@ -1,0 +1,17 @@
+[Unit]
+Description=AutoPay Streamlit Web
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/autopay
+EnvironmentFile=-/opt/autopay/.env
+ExecStart=/opt/autopay/start.sh
+Restart=always
+RestartSec=5
+User=root
+KillMode=control-group
+TimeoutStopSec=20
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,39 @@
+v37 - 2026-04-22
+- `🔍 Хатоликлар таҳлили` менюси ўрнига `📡 AutoPay Ping мониторинг` қўшилди.
+- `autopay-service` контейнер ичида `172.28.30.205` га `docker exec autopay-service ping -c 3 172.28.30.205` мониторинги қўшилди.
+- Ping натижалари учун latency графиги, packet loss тарихи ва жавоб деталлари чиқарилиши қўшилди.
+- `config.py` да default версия `v37` га янгиланди.
+
+2026-04-22 | v38
+- `📡 AutoPay Ping мониторинг` removed.
+- Added `🌐 AutoPay Amount API мониторинг`.
+- New monitor runs: curl -i -X POST -H "Content-Type: application/json" -d '{"pinfl":"12345678901234"}' "http://online.xalqsugurta.uz/xs/ins/autopay/amount".
+- Added charts for response time and HTTP status history.
+- Added request/response panels with headers and body.
+
+2026-04-22 | v39
+- Existing `🌐 AutoPay Amount API мониторинг` kept as-is.
+- Added separate page: `☕ AutoPay Amount Java API мониторинг`.
+- New page reproduces Spring `RestTemplate` request logic with `Content-Type: application/json` and `Accept: application/json`.
+- Added Java method block, request payload, request headers, response headers, response body, and history charts.
+- `config.py` default version updated to `v39`.
+
+2026-04-22 | v40
+- Removed `🌐 AutoPay Amount API мониторинг` from the active menu.
+- Removed `☕ AutoPay Amount Java API мониторинг` from the active menu.
+- Added new page: `🐇 RabbitQM`.
+- New page opens RabbitMQ management URL: `http://192.168.10.14:15672/`.
+- Added embedded iframe view and direct open button fallback.
+- `config.py` default version updated to `v40`.
+
+[v41]
+- RabbitQM менюси сақланди.
+- ☕ AutoPay Amount Java API мониторинг қайта тикланди.
+- Меню ва route логикаси янгиланди.
+- Operator роли учун ҳам RabbitQM ва Java API мониторинг рухсатлари қўшилди.
+
+2026-04-22 | v42
+- RabbitQM page changed to open embedded view through reverse proxy path `/rabbitmq/`.
+- Added nginx config file: `nginx_rabbitmq_proxy.conf`.
+- RabbitQM page now shows proxy path, direct URL, and embedded nginx snippet.
+- `config.py` default version updated to `v42`.
